@@ -26,13 +26,27 @@ namespace ClassStudentAndApply
             }
             while (n < 3 || n > 20);
 
+            //създаване на масив от обекти:
             Student[] students = new Student[n];
 
+            //създаване на всеки един обект в масива чрез използване на конструктора по подразбиране:
             for (int i = 0; i < students.Length; i++)
             {
                 students[i] = new Student();
             }
 
+            //прилагане на setter-и:
+            for (int i = 0; i < students.Length; i++)
+            {
+                Console.WriteLine("Enter studnet's first name:");
+                students[i].FirstName = Console.ReadLine();
+                Console.WriteLine("Enter studnet's family:");
+                students[i].Family = Console.ReadLine();
+                Console.WriteLine("Enter student's average marks:");
+                students[i].AvMarks = Convert.ToDouble(Console.ReadLine());
+            }
+
+            //прилагане на getter-и:
             double average = 0;
             foreach (var item in students)
             {

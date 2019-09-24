@@ -21,18 +21,24 @@ namespace ClassStudentAndApply
 
         public Student()
         {
-            Console.WriteLine("Enter studnet's first name:");
-            this.FirstName = Console.ReadLine();
-            Console.WriteLine("Enter studnet's family:");
-            this.Family = Console.ReadLine();
-            Console.WriteLine("Enter student's average marks:");
-            this.AvMarks = Convert.ToDouble(Console.ReadLine());
+            this.firstName = "";
+            this.family = "";
+            this.avMarks = 0;
         }
+        //public Student()
+        //{
+        //    Console.WriteLine("Enter studnet's first name:");
+        //    this.firstName = Console.ReadLine();
+        //    Console.WriteLine("Enter studnet's family:");
+        //    this.family = Console.ReadLine();
+        //    Console.WriteLine("Enter student's average marks:");
+        //    this.avMarks = Convert.ToDouble(Console.ReadLine());
+        //}
         public Student(string firstName, string family, double avMarks)
         {
-            this.FirstName = firstName;
-            this.Family = family;
-            this.AvMarks = avMarks;
+            this.firstName = firstName;
+            this.family = family;
+            this.avMarks = avMarks;
         }
 
         public string FirstName
